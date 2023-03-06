@@ -1,0 +1,13 @@
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+
+
+
+@media only screen and (max-width: 560px) {
+    .container {
+        margin-inline: 1rem;
+    }
+}

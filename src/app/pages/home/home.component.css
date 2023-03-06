@@ -1,0 +1,31 @@
+.container {
+    position: relative;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    margin: 3rem 3rem 3rem 0;
+}
+
+@media only screen and (min-width: 560px) {
+    .slogan {
+        position: absolute;
+        bottom: 0;
+        width: 70%;
+        background-color: hsl(var(--secondary-clr-light-grey));
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .slogan {
+        position: absolute;
+        bottom: 0;
+        width: 40%;
+        background-color: hsl(var(--secondary-clr-light-grey));
+    }
+}

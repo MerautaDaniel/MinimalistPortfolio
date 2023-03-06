@@ -1,1 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 16px;
+
+    /*colors*/
+    --primary-clr-cyan: 167 36% 54%;
+    --primary-clr-dark-blue: 205 41% 21%;
+    --primary-clr-gray-dark-blue: 245 10% 22%;
+
+    --secondary-clr-light-grey: 0 0% 98%;
+    --secondary-clr-grey: 240 2% 92%;
+    --secondary-clr-dark-grey: 0 0% 59%;
+    --secondary-clr-red: 0 90% 57%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Ibarra Real Nova',
+        serif;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: clamp(2.5rem, 2.2667rem + 1.0370vw, 3.2rem);
+    line-height: 3.12rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+p {
+    line-height: 2rem;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(var(--primary-clr-gray-dark-blue));
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    background-color: hsl(var(--secondary-clr-light-grey));
+    color: hsl(var(--primary-clr-gray-dark-blue));
+}
+
+.d-flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 560px) {
+    :root {
+        font-size: 15px;
+    }
+}

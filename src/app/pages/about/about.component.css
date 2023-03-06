@@ -1,0 +1,31 @@
+.about {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: clamp(2rem, 0.0000rem + 8.8889vw, 8rem);
+
+}
+
+.about_image {
+    width: 100%;
+}
+
+.about_text {
+    height: 100%;
+    border-bottom: 1px solid hsl(var(--secondary-clr-grey));
+    border-top: 1px solid hsl(var(--secondary-clr-grey));
+    padding-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+
+
+@media only screen and (min-width: 560px) {
+    .about {
+        flex-direction: row;
+        height: 603px;
+    }
+}

@@ -1,0 +1,22 @@
+.btn {
+    width: fit-content;
+    background-color: hsl(var(--primary-clr-dark-blue));
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: hsl(var(--primary-clr-cyan));
+}
+
+.btn_arrows {
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.btn_text {
+    color: hsl(var(--secondary-clr-light-grey));
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-inline: 2rem;
+}

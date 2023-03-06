@@ -1,0 +1,65 @@
+<div *ngIf="project" class="project-container">
+    <div class="project-hero">
+        <picture>
+            <source media="(min-width:1020px)" [srcset]=project.heroImgDesktop>
+            <source media="(min-width:755px)" [srcset]=project.heroImgTablet>
+            <img [src]=project.heroImgMobile style="width:100%;">
+        </picture>
+    </div>
+
+    <div class="project-info">
+        <h1 class="title">{{project.name}}</h1>
+        <p class="desc">{{project.description}}</p>
+        <div class="tech">
+            <p *ngFor="let element of project.technologiesUsed" [ngStyle]="{'display':'inline-block'}">
+                {{element}}/ </p>
+        </div>
+        <app-secondary-button class="btn" text="Visit website"></app-secondary-button>
+    </div>
+    <div class="d-flex-center project-detail">
+        <div class="project-detail_background">
+            <h2>Project Background</h2>
+            <p>{{ project.projectBackground}}</p>
+        </div>
+        <div class="project-detail_screenshots">
+            <h2>Static Preview</h2>
+            <picture>
+                <source media="(min-width:1020px)" [srcset]=project.imgPreviewDesktop1>
+                <source media="(min-width:755px)" [srcset]=project.imgPreviewTablet1>
+                <img [src]=project.imgPreviewMobile1 style="width:auto;">
+            </picture>
+            <picture>
+                <source media="(min-width:1020px)" [srcset]=project.imgPreviewDesktop2>
+                <source media="(min-width:755px)" [srcset]=project.imgPreviewTablet2>
+                <img [src]=project.imgPreviewMobile2 style="width:auto;">
+            </picture>
+        </div>
+    </div>
+
+    <div class="d-flex-center prev-next">
+        <div class="prev">
+            <div class="d-flex-center arrow"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16">
+                    <path fill="none" stroke="#33323D" d="M9 0L1 8l8 8" />
+                </svg></div>
+            <div class="prev-next-project">
+                <h2>{{displayPrevProjectName()}}</h2>
+                <a (click)="goToPrevProj()"> Previous Project</a>
+            </div>
+        </div>
+        <div class="next">
+            <div class="d-flex-center arrow"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16">
+                    <path fill="none" stroke="#33323D" d="M1 0l8 8-8 8" />
+                </svg></div>
+            <div class="prev-next-project">
+                <h2>{{displayNextProjectName()}}</h2>
+                <a (click)=" goToNextProj()"> Next Project</a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--This is an example to go to previously project-->
+    <!-- <a routerLink='/Portfolio/Project/{{+projectID-1}}'> Previous Project</a>
+    <a routerLink='/Portfolio/Project/{{+projectID + 1}}'> Next Project</a>-->
+</div>

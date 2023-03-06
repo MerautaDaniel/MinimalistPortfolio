@@ -1,0 +1,25 @@
+<form (ngSubmit)="onSubmit(myForm)" #myForm="ngForm">
+    <div class="input_field">
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Jane Appleseed" ngModel required #name="ngModel">
+        <div>
+            <small *ngIf="name.invalid && name.touched">Name is a required field!</small>
+        </div>
+    </div>
+    <div class="input_field">
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="email@example.com" ngModel required email #mail="ngModel">
+        <div>
+            <small *ngIf="mail.invalid && mail.touched">Email is a required field!</small>
+        </div>
+    </div>
+    <div class="input_field">
+        <label for="message">Message</label>
+        <textarea type="text" name="message" placeholder="How can I help?" rows="3" ngModel required
+            #mess="ngModel"></textarea>
+        <div>
+            <small *ngIf="mess.invalid && mess.touched">Message is a required field!</small>
+        </div>
+    </div>
+    <button type="submit" class="btn_submit" [disabled]="!myForm.valid">Send Message</button>
+</form>

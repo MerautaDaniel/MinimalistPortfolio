@@ -1,0 +1,62 @@
+.header {
+    justify-content: space-between;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding-block: 2rem;
+}
+
+ul {
+    gap: 2rem;
+}
+
+li a {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+a:hover,
+.active {
+    color: hsl(var(--primary-clr-cyan));
+}
+
+.menu-action {
+    display: none;
+}
+
+@media only screen and (max-width: 560px) {
+    header {
+        position: relative;
+    }
+
+    nav {
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        top: 6.3rem;
+        background-color: hsl(var(--primary-clr-dark-blue));
+        width: 13rem;
+        padding-block: 2rem;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    a {
+        color: hsl(var(--secondary-clr-light-grey));
+    }
+
+    .menu-action {
+        display: inline-block;
+        position: relative;
+        top: -0.5rem;
+    }
+
+    .hamburgher,
+    .close {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+    }
+}

@@ -1,0 +1,38 @@
+.get-in-touch,
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-block: 2rem;
+
+}
+
+.get-in-touch {
+    border-bottom: 1px solid hsl(var(--secondary-clr-grey));
+    border-top: 1px solid hsl(var(--secondary-clr-grey));
+}
+
+.social {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+@media (min-width:900px) {
+
+    .contact-container {
+        max-width: 75rem;
+        margin: 0 auto;
+    }
+
+    .contact-form,
+    .get-in-touch {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .right {
+        width: 40rem;
+    }
+
+}

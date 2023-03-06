@@ -1,0 +1,122 @@
+/*Mobile*/
+.project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.project-info {
+    border-bottom: 1px solid hsl(var(--secondary-clr-grey));
+    border-top: 1px solid hsl(var(--secondary-clr-grey));
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    height: max-content;
+    padding-block: 2rem;
+}
+
+.project-detail {
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.project-detail_background h2,
+.project-detail_screenshots h2 {
+    margin-bottom: 2rem;
+}
+
+.project-detail_screenshots img {
+    margin-bottom: 2rem;
+}
+
+.prev-next {
+    border-bottom: 1px solid hsl(var(--secondary-clr-grey));
+    border-top: 1px solid hsl(var(--secondary-clr-grey));
+
+}
+
+.prev {
+    border-right: 2px solid hsl(var(--secondary-clr-grey));
+    flex: 1;
+    padding-block: 2rem;
+}
+
+.next {
+    flex: 1;
+    padding-block: 2rem;
+    text-align: end;
+    place-content: end;
+    flex-direction: row-reverse;
+}
+
+.next,
+.prev {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.prev-next-project {
+    cursor: pointer;
+}
+
+.tech p {
+    color: hsl(var(--primary-clr-cyan));
+}
+
+
+/*Tablet*/
+@media (min-width:561px) and (max-width:1020px) {
+    .project-container {
+
+        grid-template-columns: 1fr;
+    }
+
+    .project-info {
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "title desc"
+            "tech desc"
+            "btn desc";
+        gap: 1rem;
+
+    }
+
+    .title {
+        grid-area: title;
+    }
+
+    .desc {
+        grid-area: desc;
+    }
+
+    .tech {
+        grid-area: tech;
+    }
+
+    .btn {
+        grid-area: btn;
+    }
+
+
+}
+
+/*Desktop*/
+@media (min-width:1021px) {
+    .project-container {
+        width: 75rem;
+        margin-inline: auto;
+        grid-template-columns: 1fr 635px;
+        gap: 7.81rem;
+    }
+
+    .project-hero {
+        grid-column: 1/3;
+    }
+
+    .prev-next {
+        grid-column: 1/3;
+    }
+}

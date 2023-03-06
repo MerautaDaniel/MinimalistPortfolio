@@ -1,0 +1,16 @@
+.secondary-btn {
+    background-color: hsl(var(--secondary-clr-light-grey));
+    color: hsl(var(--primary-clr-gray-dark-blue));
+    border: 2px solid hsl(var(--primary-clr-gray-dark-blue));
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: 1rem;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.secondary-btn:hover {
+    background-color: hsl(var(--primary-clr-gray-dark-blue));
+    color: hsl(var(--secondary-clr-light-grey));
+}

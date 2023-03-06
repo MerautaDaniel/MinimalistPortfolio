@@ -1,0 +1,4 @@
+<div class="container">
+    <app-project-preview *ngFor="let project of projects" [project]="project"
+        (selectedProject)="goToProjectPage(project)"></app-project-preview>
+</div>

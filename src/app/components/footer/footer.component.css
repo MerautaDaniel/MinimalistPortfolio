@@ -1,0 +1,22 @@
+.footer_contact {
+    max-width: 75rem;
+    gap: 2rem;
+    margin: 6rem auto;
+}
+
+.footer_contact h2 {
+    width: 22rem;
+}
+
+.spacer {
+    flex: 1 1 auto;
+    height: 1px;
+    background-color: hsl(var(--secondary-clr-grey));
+}
+
+
+@media only screen and (max-width: 560px) {
+    .footer_contact {
+        flex-direction: column;
+    }
+}
