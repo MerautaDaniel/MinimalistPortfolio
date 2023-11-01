@@ -9,11 +9,11 @@ export const PROJECTS: Project[] = [
     projectBackground:
       'This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.',
     staticPreviewDesktop:
-      '../../../assets/images/portfolio/desktop/image-portfolio-manage.jpg',
+      'assets/images/portfolio/desktop/image-portfolio-manage.jpg',
     staticPreviewTablet:
-      '../../../assets/images/portfolio/tablet/image-portfolio-manage.jpg',
+      'assets/images/portfolio/tablet/image-portfolio-manage.jpg',
     staticPreviewMobile:
-      '../../../assets/images/portfolio/mobile/image-portfolio-manage.jpg',
+      'assets/images/portfolio/mobile/image-portfolio-manage.jpg',
     technologiesUsed: [
       'Interaction Design',
       'Front End Development',
@@ -42,11 +42,11 @@ export const PROJECTS: Project[] = [
     projectBackground:
       'This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.',
     staticPreviewDesktop:
-      '../../../assets/images/portfolio/desktop/image-portfolio-bookmark.jpg',
+      'assets/images/portfolio/desktop/image-portfolio-bookmark.jpg',
     staticPreviewTablet:
-      '../../../assets/images/portfolio/tablet/image-portfolio-bookmark.jpg',
+      'assets/images/portfolio/tablet/image-portfolio-bookmark.jpg',
     staticPreviewMobile:
-      '../../../assets/images/portfolio/mobile/image-portfolio-bookmark.jpg',
+      'assets/images/portfolio/mobile/image-portfolio-bookmark.jpg',
     technologiesUsed: [
       'Interaction Design',
       'Front End Development',
@@ -78,11 +78,11 @@ export const PROJECTS: Project[] = [
     projectBackground:
       'This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.',
     staticPreviewDesktop:
-      '../../../assets/images/portfolio/desktop/image-portfolio-insure.jpg',
+      'assets/images/portfolio/desktop/image-portfolio-insure.jpg',
     staticPreviewTablet:
-      '../../../assets/images/portfolio/tablet/image-portfolio-insure.jpg',
+      'assets/images/portfolio/tablet/image-portfolio-insure.jpg',
     staticPreviewMobile:
-      '../../../assets/images/portfolio/mobile/image-portfolio-insure.jpg',
+      'assets/images/portfolio/mobile/image-portfolio-insure.jpg',
     technologiesUsed: [
       'Interaction Design',
       'Front End Development',
@@ -110,11 +110,11 @@ export const PROJECTS: Project[] = [
     projectBackground:
       'This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.',
     staticPreviewDesktop:
-      '../../../assets/images/portfolio/desktop/image-portfolio-fylo.jpg',
+      'assets/images/portfolio/desktop/image-portfolio-fylo.jpg',
     staticPreviewTablet:
-      '../../../assets/images/portfolio/tablet/image-portfolio-fylo.jpg',
+      'assets/images/portfolio/tablet/image-portfolio-fylo.jpg',
     staticPreviewMobile:
-      '../../../assets/images/portfolio/mobile/image-portfolio-fylo.jpg',
+      'assets/images/portfolio/mobile/image-portfolio-fylo.jpg',
     technologiesUsed: [
       'Interaction Design',
       'Front End Development',
